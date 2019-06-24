@@ -6,7 +6,7 @@ class Base(object):
         # 发件人
         self.from_e = ''
         # 收件人
-        self.to = ''
+        self.to = ()
         # smtp服务器
         self.hostname = ''
         # 发件人用户名
