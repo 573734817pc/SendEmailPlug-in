@@ -20,7 +20,7 @@ class SendEmail(Base.Base):
             msg.attach(MIMEText(self.mailtext, self.emailtype, self.mailencoding))
             msg["Subject"] = Header(self.mailsubject, self.mailencoding)
             msg["from"] = self.from_e
-            msg["to"] = self.to
+            #msg["to"] = self.to
             if self.annexpath != "":
                 with open(self.annexpath, 'rb') as f:
                     # 设置附件的MIME和文件名，这里是png类型:

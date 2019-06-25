@@ -5,7 +5,7 @@ class EmailConf(SendEmail.SendEmail):
             # 发件人
             self.from_e = '573734817@qq.com'
             # 收件人
-            self.to = ('1326946283@qq.com')
+            self.to = ['1326946283@qq.com', '3083460943@qq.com']
             # smtp服务器
             self.hostname = 'smtp.qq.com'
             # 发件人用户名
@@ -24,7 +24,7 @@ class EmailConf(SendEmail.SendEmail):
             # 附件类型
             self.annextype = 'image'
             # 附件路径
-            self.annexpath = '/Users/0923/Desktop/Email/test.jpg'
+            self.annexpath = './imgs/test.jpg'
             # 附件名称包含后缀名
             self.annexname = 'test.jpg'
             # 附件后缀

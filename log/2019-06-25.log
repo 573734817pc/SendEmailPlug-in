@@ -1,0 +1,34 @@
+2019-06-25 09:23:03,509 - C:\Users\0923\Desktop\sql优化\wer\SendEmailPlug-in\EmailLib\SendEmail.py[line:43] - ERROR: 'tuple' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "C:\Users\0923\Desktop\sql优化\wer\SendEmailPlug-in\EmailLib\SendEmail.py", line 39, in send_email
+    smtp.sendmail(self.from_e, self.to, msg.as_string())
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\message.py", line 158, in as_string
+    g.flatten(self, unixfrom=unixfrom)
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\generator.py", line 195, in _write
+    self._write_headers(msg)
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\generator.py", line 222, in _write_headers
+    self.write(self.policy.fold(h, v))
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\_policybase.py", line 326, in fold
+    return self._fold(name, value, sanitize=True)
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\_policybase.py", line 369, in _fold
+    parts.append(h.encode(linesep=self.linesep, maxlinelen=maxlinelen))
+AttributeError: 'tuple' object has no attribute 'encode'
+2019-06-25 09:27:43,768 - C:\Users\0923\Desktop\sql优化\wer\SendEmailPlug-in\EmailLib\SendEmail.py[line:43] - ERROR: 'list' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "C:\Users\0923\Desktop\sql优化\wer\SendEmailPlug-in\EmailLib\SendEmail.py", line 39, in send_email
+    smtp.sendmail(self.from_e, self.to, msg.as_string())
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\message.py", line 158, in as_string
+    g.flatten(self, unixfrom=unixfrom)
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\generator.py", line 195, in _write
+    self._write_headers(msg)
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\generator.py", line 222, in _write_headers
+    self.write(self.policy.fold(h, v))
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\_policybase.py", line 326, in fold
+    return self._fold(name, value, sanitize=True)
+  File "C:\Users\0923\AppData\Local\Programs\Python\Python37\lib\email\_policybase.py", line 369, in _fold
+    parts.append(h.encode(linesep=self.linesep, maxlinelen=maxlinelen))
+AttributeError: 'list' object has no attribute 'encode'

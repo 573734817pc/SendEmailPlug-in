@@ -5,7 +5,7 @@
 	    # 发件人
 	    self.from_e = '573734817@qq.com'
             # 收件人
-            self.to = ('1326946283@qq.com')
+            self.to = ['1326946283@qq.com']
             # smtp服务器
             self.hostname = 'smtp.qq.com'
             # 发件人用户名
@@ -29,7 +29,7 @@
             self.annexname = 'test.jpg'
             # 附件后缀
             self.annexsuffix = 'jpg'
-其中self.to是一个数组（tuple），这样的话就可以发送给多个人。
+其中self.to是一个数组[list]，这样的话就可以发送给多个人。
 
 4、如果需要多个的发件人发给不同的收件人的话，可以配置多个def email_conf3(self):
    然后再在Run.py中添加运行语句即可
