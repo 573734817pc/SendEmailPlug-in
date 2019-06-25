@@ -5,7 +5,7 @@
 	    # 发件人
 	    self.from_e = '573734817@qq.com'
             # 收件人
-            self.to = ['1326946283@qq.com']
+            self.to = ['1326946283@qq.com', '3083460943@qq.com']
             # smtp服务器
             self.hostname = 'smtp.qq.com'
             # 发件人用户名
